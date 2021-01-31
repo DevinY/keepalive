@@ -1,0 +1,14 @@
+version: '3.6'
+services:
+#=== web service ======================
+ srv:
+  build:
+    context: .
+  network_mode: host
+  dns: 168.95.1.1
+  volumes:
+    - "./master.conf:/etc/keepalived.conf"
+    #- "./backup.conf:/etc/keepalived.conf"
+  cap_add:
+    - NET_ADMIN
+  hostname: keepalive

@@ -52,6 +52,3 @@ vrrp_instance VI_1 {
 
 ### backup上啟動(backup.conf)
 <pre>docker run -d --name keepalive --restart always --cap-add=NET_ADMIN --network host -v ${PWD}/backup.conf:/etc/keepalived.conf keepalive_srv</pre>
-# keepalive
-# keepalive
-# keepalive
