@@ -1,5 +1,8 @@
 # keepalived
 
+兩台主機的ip網卡使用的IP及VIP需要同網段，網路模式為host，因此repo只能在Linux下的環境運作哦。
+
+
 # 有docker-compose可以透過docker-compose build image及啟動
 
 記得調整自己的master.conf及backup.conf在不同的兩台機器上
